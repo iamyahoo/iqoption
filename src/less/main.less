@@ -1,0 +1,497 @@
+//@import "variables.less";
+//@import "base.less";
+
+.main-container {
+	min-height: 100%;
+    position: relative;
+    width: 100%;
+}
+
+//page-header styles start
+.page-header {
+	position: relative;
+	width: 100%;
+	height: auto;
+	max-height: 660px;
+	padding-bottom: 50px;
+	background: url('../img/design/bg_first.jpg') center center no-repeat;
+	background-size: cover;
+	z-index: 0;
+} 
+
+.header-bg-video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	min-height: 100%;
+	min-width: 100%;
+	width: auto;
+	height: auto;
+	overflow: hidden;
+	z-index: 10;
+	background: @color-black;
+}
+
+.header-wrapper {
+	position: relative;
+	z-index: 20;
+}
+
+.header-top {
+	.clearfix();
+	margin-bottom: 40px;
+}
+
+.header-video-link {
+	cursor: pointer;
+}
+
+.header-logo {
+	float: left;
+	width: 104px;
+	height: 24px;
+	margin: 30px;
+	background: url('../img/design/iq-option-logo.png');
+}
+
+.header-badges {
+	margin: 0 auto;
+	max-width: 100%;
+	text-align: center;	
+}
+
+.header-badges__item {
+	display: inline-block;
+	vertical-align: middle;
+	width: 20%;
+	padding-left: 60px;
+	margin-right: 20px;
+
+	&:nth-child(1) {
+		background: url(../img/design/badge_1.png) center left no-repeat;
+	}
+
+	&:nth-child(2) {
+		background: url(../img/design/badge_2.png) center left no-repeat;
+	}
+
+	&:nth-child(3) {
+		background: url(../img/design/badge_3.png) center left no-repeat;
+	}
+	
+	p {
+		color: @color-white;
+		text-align: left;
+		min-width: 160px;
+	}
+}
+
+.header-title {	
+	padding: 10px;
+	color: @color-white;
+	line-height: 50px;
+	background: rgba(0,0,0,.7);	
+	.title();
+}
+
+.header-title__part_1 {
+	font-size: 38px;
+	color: @color-white;
+}
+
+.header-title.title_1 {
+	max-width: 750px;
+	margin: 20px auto; 
+	font-size: 46px;
+}
+
+.header-title.title_2 {
+	max-width: 550px;
+	margin: 20px auto 40px; 
+	font-size: 44px;
+}
+
+.header-text {
+	font-family: @font-family_light;
+	color: @color-white;
+	text-align: center;
+	font-size: 20px;
+}
+
+.clock {
+	margin: 20px auto 30px;
+	width: 640px;
+	height: 100px;
+}
+
+.flip-clock-label {
+	display: none;
+}
+
+.flip-clock-dot {
+	display: none;
+}
+
+.flip {
+	-webkit-box-shadow: 0px 0px 1px 10px rgba(11,12,15,1) !important;
+	-moz-box-shadow: 0px 0px 1px 10px rgba(11,12,15,1) !important;
+	box-shadow: 0px 0px 1px 10px rgba(11,12,15,1) !important;
+}
+
+.flip-clock-wrapper ul {
+	font-family: @font-family !important;
+}
+
+.inn {
+	color: @color-white !important;
+}
+//page-header styles end
+
+
+// broker styles start
+.broker {
+	background: @color-white;
+}
+
+.broker-title {
+	.title_medium();
+	margin: 50px auto;
+	font-family: @font-family;
+	font-size: 28px;
+}
+
+.broker-wrapper {
+	margin-bottom: 20px;
+}
+
+.broker-item-wrapper {
+	text-align: center;
+}
+
+.broker-title-wrapper {
+	margin: 10px 0;
+	background: @color-gray-30;
+}
+
+.broker-title_small {
+	width: 51.8%;
+	margin: 0 auto;
+	padding: 5px;
+
+	p {
+		font-size: 18px;
+	}
+}
+
+.broker-name,
+.broker-time,
+.broker-platform,
+.broker-profit {
+	display: inline-block;
+	vertical-align: top;
+	width: 30%;
+	padding-left: 5%;
+	text-align: left;
+}
+
+.broker-name_1 {
+	min-width: 232px;
+	height: 52px;
+	background: url(../img/design/iq-option-logo_big.png) center left no-repeat;
+}
+
+.broker-name_2 p {
+	text-transform: uppercase;
+	color: @color-orange;
+	font-size: 24px;
+	font-family: @font-family_medium;
+}
+
+.broker-text_big {
+    font-family: @font-family_thin;
+    font-size: 22px;
+}
+
+.broker-more {
+	text-align: center;
+	background: @color-gray-90;
+	padding: 15px;
+}
+
+.broker-more__link {
+	padding: 15px;
+	font-size: 16px;
+	color: @color-white;
+	text-decoration: underline;
+	transition: all, .2s;
+
+	&:hover {
+		text-decoration: none;
+		color: @color-orange;
+	}
+}
+// broker styles end
+
+
+// stat styles start
+.stat {
+	width: 100%;
+    height: auto;
+    max-height: 590px;
+    padding: 1px;
+    padding-bottom: 50px;
+    background: url('../img/design/bg_second.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+.stat-title {
+	margin: 50px 0;
+	color: @color-white;
+	font-family: @font-family;
+	font-size: 34px;
+}
+
+.stat-item-wrapper {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.stat-item {
+	display: inline-block;
+	vertical-align: top;
+	width: 20%;
+}
+
+.stat-item__text_big {
+	font-family: @font-family;
+	font-size: 34px;
+	color: @color-orange;
+}
+
+.stat-item__text_small {
+	font-family: @font-family;
+	font-size: 18px;
+	color: @color-white;
+}
+// stat styles end
+
+
+// pay-systems styles start
+.pay-systems {
+	background: @color-white;
+	padding: 1px;
+}
+
+.pay-systems-title_big {
+	.title_medium();
+	margin-top: 50px;
+}
+
+.pay-systems-title_small {
+	text-transform: none;
+}
+
+.pay-systems-img {
+	width: 780px;
+    height: 90px;
+    margin: 30px auto;
+	background: url(../img/design/pay-systems.png);
+}
+// pay-systems styles end
+
+
+// platform styles start
+.platform {
+	position: relative;
+	width: 100%;
+    height: auto;
+    max-height: 310px;
+    padding: 1px;
+    padding-bottom: 50px;
+    background: url('../img/design/bg_first.jpg') center center no-repeat;
+    background-size: cover;
+    z-index: 0;
+}
+
+.platform-bg-video {
+	.header-bg-video();
+	z-index: 10;
+}
+
+.platform-title {
+	.title_medium();
+	position: relative;
+	margin: 50px 0;
+	color: @color-white;
+	z-index: 20;
+}
+// platform styles end
+
+
+// app styles start
+.app {
+	padding: 1px;
+	background: @color-white;
+}
+
+.app-text {
+	font-size: 16px;
+	text-align: center;
+}
+
+.app-phone {
+	width: 90%;
+	margin: 50px auto;
+	text-align: center;
+}
+
+.app-phone__title {
+	margin: 0px 0px 10px;
+	font-size: 30px;
+	line-height: 35px;
+	font-family: @font-family_light;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.app-phone__title_big {
+	font-family: @font-family_medium;
+}
+
+.app-phone__img {
+	max-width: 550px;
+	width: 100%;
+	height: auto;
+	margin-top: 10px;
+}
+
+.app-phone__links {
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	max-width: 300px;
+}
+
+.app-phone__link {
+	display: inline-block;
+	margin: 5px;
+	width: 250px;
+	height: 76px;
+}
+
+.app-phone__link_apple {
+	background: url(../img/design/btn-app-store.png) center center no-repeat;
+}
+
+.app-phone__link_google {
+	background: url(../img/design/btn-google-play.png) center center no-repeat;
+}
+// app styles end
+
+
+// signup styles start
+.signup {
+	padding: 1px;
+	background: @color-gray-10;
+}
+
+.signup-form {
+	text-align: center;
+}
+
+.signup-form__input {
+	.input();
+}
+
+.signup-form__submit {
+	.btn();
+	margin: 30px auto;
+	border-color: @color-black;
+	color: @color-black;
+
+}
+
+// signup styles end
+
+
+// media queries start
+@media (max-width: 1000px) {
+	.page-header {
+		padding: 30px;
+	}
+
+	.header-bg-video {
+		display: none;
+	}
+
+	.header-top {
+		display: none;
+	}	
+
+	.header-text {
+		display: none;
+	}
+
+	.clock {
+		display: none;
+	}
+
+	.app-phone__links {
+		display: block;
+		margin: 20px auto;
+		max-width: 100%;
+		vertical-align: top;
+		text-align: center;		
+	}
+
+	.app-phone__img {
+	    display: block;
+	    margin: 0 auto;
+	}
+
+
+}
+
+@media (max-width: 640px) {
+	.header-title.title_1 {
+		font-size: 40px;
+	}
+
+	.header-title__part_1 {
+		font-size: 30px;
+	}
+	
+	.header-title.title_2 {
+		font-size: 36px;
+	}
+
+	p {
+		font-size: 20px;
+	}
+
+	.broker-name {
+		width: 30%;
+	}
+
+	.broker-title_small {
+		width: 82%;
+	}
+
+	.broker-text_big {
+		font-size: 28px;
+	}
+	
+	.broker-time,
+	.broker-platform,
+	.broker-profit {
+		width: 45%;
+	}
+
+	.stat-item {
+		width: 60%;
+	}
+
+
+}

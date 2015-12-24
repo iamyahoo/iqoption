@@ -1,0 +1,262 @@
+// @import "variables.less";
+
+
+/*for IE8 start*/
+main,
+header,
+nav,
+article,
+aside,
+footer,
+figure {
+    display: block;
+}
+figcaption {
+    display: inline;
+}
+/*for IE8 end*/
+
+
+
+/*------------common styles start--------------*/
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.clearfix {
+    &:before, &:after{ 
+        content:""; 
+        display:table; 
+    }
+    &:after {
+        clear: both; 
+    }
+}
+
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.hidden {
+    display: none!important;
+    visibility: hidden!important;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.text {
+    font-family: @font-family;
+    font-size: @font-size;
+}
+
+.text_center {
+    text-align: center;
+}
+
+.text_bold {
+    font-family: @font-family_bold;
+}
+
+.title {
+    margin: 20px 0;
+    font-family: @font-family_light;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.title_medium {
+    font-family: @font-family_medium;
+    font-size: 30px;
+}
+
+.white {
+    color: @color-white;
+}
+
+.black {
+    color: @color-black;
+}
+
+.orange {
+    color: @color-orange;
+}
+
+.green {
+    color: @color-green;
+}
+
+// buttons start
+.btn {
+    display: block;
+    width: 270px;
+    margin: 10px auto;
+    padding: 16px 10px;
+    font-family: @font-family;
+    font-size: 20px;
+    color: @color-white;
+    text-align: center;
+    text-transform: uppercase;
+    background: transparent;
+    border: 2px solid @color-white;
+    border-radius: 15px;
+    transition: all .2s;
+
+    &:hover {
+       border: 2px solid @color-orange; 
+       color: @color-orange;
+       text-decoration: none;
+    }
+
+    &:active {
+        border: 2px solid @color-orange;        
+        background-color: @color-orange;
+        color: @color-white;
+        text-decoration: none;
+        outline: 0;
+    }
+
+    &:focus {
+        outline: 0;
+    }
+}
+
+.btn-light {
+    .btn;
+}
+
+.input {
+    width: 220px;
+    padding: 8px;
+    margin: 5px;
+    color: @color-gray-90;
+    background: @color-white;
+    border: 1px solid @color-gray-40;
+    &:hover,
+    &:active,
+    &:focus
+     {
+        outline: 0;
+        -webkit-box-shadow: inset 2px 2px 3px 0px rgba(0,0,0,0.1);
+        -moz-box-shadow: inset 2px 2px 3px 0px rgba(0,0,0,0.1);
+        box-shadow: inset 2px 2px 3px 0px rgba(0,0,0,0.1);
+    }
+}
+// buttons end
+
+
+/*====================common styles end====================*/
+
+
+
+/*====================base styles start====================*/
+html {
+    box-sizing: border-box;
+    font-family: @font-family;
+    font-size: @font-size;
+    line-height: @line-height_large;
+    min-width: 340px;
+    background-color: @color-white;
+    color: @color-black;
+    height: 100%;
+}
+
+body {
+    position: relative;
+    height: 100%;
+    margin: 0;
+}
+
+h1 {
+    margin: 20px 0;
+    font-family: @font-family_light;
+    line-height: 40px;
+    text-align: center;
+    text-transform: uppercase; 
+}
+
+h2 {
+    margin: 20px 0;
+    font-family: @font-family_light;
+    line-height: 40px;
+    text-align: center;
+    text-transform: uppercase; 
+}
+
+h3 {
+    margin: 20px 0;
+    font-family: @font-family_light;
+    line-height: 40px;
+    text-align: center;
+    text-transform: uppercase; 
+}
+
+p {
+    font-family: @font-family;
+    font-size: @font-size;
+    color: @color-dark;
+    margin: 15px 0;
+    line-height: @line-height_large;
+}
+
+span {
+    color: @color-dark;
+}
+
+a {
+    font-family: @font-family;
+    font-size: @font-size;
+    color: @color-dark;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    &[href^="tel"] {
+        text-decoration: none;
+        white-space: nowrap;
+    }
+}
+
+fieldset {
+    border: none;
+}
+
+input {
+    font-size: @font-size;
+
+    &[type="text"] {
+        cursor: text;
+    }
+
+    &[type="radio"],
+    &[type="checkbox"] {
+        cursor: pointer;
+    }
+}
+
+label {
+    font-size: @font-size;
+    cursor: pointer;
+}
+
+textarea {
+    resize: none;
+}
+
+
+/*====================base styles end=====================*/
